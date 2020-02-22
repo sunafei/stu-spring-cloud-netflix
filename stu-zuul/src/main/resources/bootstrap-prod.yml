@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      uri: http://xxx.xxx.xx.xx:8888
+      name: stu-client-eureka, stu-client-zipkin
+      label: master
+      profile: prod

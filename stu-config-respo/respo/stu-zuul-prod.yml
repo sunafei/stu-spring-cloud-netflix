@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: stu-zuul
+server:
+  port: 8769
+
+
+zuul:
+  routes:
+    api-a:
+      path: /api/web/** # 以api/f开头的请求都转发给stu-web-admin-feign服务
+      serviceId: stu-web-admin-feign
+#    api-b:
+#      path: /api/f/** #
+#      serviceId: stu-web-admin-feign

@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: stu-service-admin
+
+server:
+  port: 8764

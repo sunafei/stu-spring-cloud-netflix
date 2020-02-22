@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: stu-web-admin-feign
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+
+server:
+  port: 8765
+# 打开熔断器
+feign:
+  hystrix:
+    enabled: true

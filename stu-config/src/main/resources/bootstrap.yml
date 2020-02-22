@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: stu-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/sunafei/stu-spring-cloud-netflix.git
+          search-paths: stu-config-respo/respo
+          username: 924393541@qq.com
+          password: sunafei!@#819
+  zipkin:
+    base-url: http://localhost:9411
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
