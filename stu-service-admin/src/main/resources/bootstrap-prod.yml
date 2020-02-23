@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      uri: http://xxx.xxx.xx.xx:8888
-      name: stu-service-admin, stu-client-eureka, stu-client-zipkin
+      uri: http://localhost:8888
+      name: stu-service-admin, stu-client-eureka, stu-client-zipkin, stu-client-admin
       label: master
       profile: prod

@@ -15,6 +15,7 @@
         <module>stu-zuul</module>
         <module>stu-config</module>
         <module>stu-zipkin</module>
+        <module>stu-admin</module>
     </modules>
 
     <parent>
@@ -74,6 +75,18 @@
                 <version>${zipkin.version}</version>
             </dependency>
             <!-- ZipKin End -->
+            <!-- Spring Boot Admin Begin -->
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-server</artifactId>
+                <version>${spring-boot-admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-client</artifactId>
+                <version>${spring-boot-admin.version}</version>
+            </dependency>
+            <!-- Spring Boot Admin End -->
         </dependencies>
     </dependencyManagement>
 

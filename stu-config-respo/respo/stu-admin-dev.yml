@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: stu-admin
+
+server:
+  port: 8084
